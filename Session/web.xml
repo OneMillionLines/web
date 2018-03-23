@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC
+    "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+  <web-app>
+     <!-- ... -->
+
+     <!-- Register the session counting event listener. -->
+     <listener>
+       <listener-class>
+        moreservlets.listeners.SessionCounter
+       </listener-class>
+     </listener>
+     <!-- ... -->
+
+     <!-- Set the default session timeout to two minutes. -->
+     <session-config>
+         <session-timeout>2</session-timeout>
+     </session-config>
+     <!-- ... -->
+</web-app>
